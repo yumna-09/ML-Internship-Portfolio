@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Basic SEO & Social Share Preview Meta Tags -->
+<title>Contact — Yumna Kashif</title>
+<meta name="description" content="Propose an interview call or get in touch with Yumna Kashif — Data Science & ML Intern.">
+<meta property="og:title" content="Contact — Yumna Kashif">
+<meta property="og:description" content="Propose an interview call or schedule a slot straight to my inbox.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yumnakashif-ml-internship-portfolio.netlify.app/contact">
+<meta property="og:image" content="https://yumnakashif-ml-internship-portfolio.netlify.app/images/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<script>
+  try {
+    if (localStorage.getItem('portfolio-theme') === 'dark') document.documentElement.dataset.theme = 'dark';
+  } catch (e) {}
+</script>
+
+<!-- Free, cookieless analytics -->
+<script data-goatcounter="https://yumnakashif.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body class="contact-page">
+
+<div class="ambient-glow"><span></span><span></span><span></span></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header>
+  <nav>
+    <a class="brand" href="index.html"><img src="images/logo.png" alt="Y" class="brand-logo">Yumna Kashif</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <ul class="navlinks" id="navLinks">
+      <li><a class="edge-glow" href="index.html">Home</a></li>
+      <li><a class="edge-glow" href="work.html">Work</a></li>
+      <li><a class="edge-glow" href="about.html">About</a></li>
+      <li><a class="active edge-glow" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="contact-section">
+  <div class="wrap">
+    <div class="contact-hero-grid">
+      <div class="section-head reveal in" style="max-width:640px; margin-bottom:0;">
+        <span class="eyebrow" style="margin-top: 24px; display: inline-block;">Contact</span>
+        <h2>Propose a time for an interview call</h2>
+        <p>Pick a day, a date, and a time slot that works for you. It submits straight to my inbox — I'll reply to confirm or suggest another slot.</p>
+      </div>
+
+      <div class="globe-scene tilt-card" id="globeScene" aria-hidden="true">
+        <div class="globe-inner" id="globeInner">
+          <div class="globe-glow"></div>
+          <div class="globe-sphere">
+            <span class="globe-meridian m1"></span>
+            <span class="globe-meridian m2"></span>
+            <span class="globe-meridian m3"></span>
+            <span class="globe-equator"></span>
+          </div>
+          <div class="orbit-ring g-r1"><span class="orbit-chip">📞</span></div>
+          <div class="orbit-ring g-r2"><span class="orbit-chip">💬</span></div>
+        </div>
+      </div>
+    </div>
+
+    <form class="scheduler reveal-3d highlight-edge" id="schedForm">
+      <div class="sched-grid">
+        <div class="sched-field">
+          <label for="schedName">Your name</label>
+          <input type="text" id="schedName" placeholder="e.g. Ahmed Raza" required maxlength="100">
+        </div>
+        <div class="sched-field">
+          <label for="schedEmail">Your email</label>
+          <input type="email" id="schedEmail" placeholder="you@example.com" required>
+        </div>
+        <div class="sched-field">
+          <label for="schedDate">Date</label>
+          <input type="date" id="schedDate" required>
+        </div>
+        <div class="sched-field sched-full">
+          <label>Preferred time</label>
+          <div class="chip-picker">
+            <div class="chip-group" id="hourChips">
+              <button type="button" class="chip-mini" data-hour="1" aria-pressed="false">1</button><button type="button" class="chip-mini" data-hour="2" aria-pressed="false">2</button>
+              <button type="button" class="chip-mini" data-hour="3" aria-pressed="false">3</button><button type="button" class="chip-mini" data-hour="4" aria-pressed="false">4</button>
+              <button type="button" class="chip-mini" data-hour="5" aria-pressed="false">5</button><button type="button" class="chip-mini" data-hour="6" aria-pressed="false">6</button>
+              <button type="button" class="chip-mini" data-hour="7" aria-pressed="false">7</button><button type="button" class="chip-mini" data-hour="8" aria-pressed="false">8</button>
+              <button type="button" class="chip-mini" data-hour="9" aria-pressed="false">9</button><button type="button" class="chip-mini" data-hour="10" aria-pressed="false">10</button>
+              <button type="button" class="chip-mini" data-hour="11" aria-pressed="false">11</button><button type="button" class="chip-mini" data-hour="12" aria-pressed="false">12</button>
+            </div>
+            <div class="chip-group" id="minuteChips">
+              <button type="button" class="chip-mini" data-min="00" aria-pressed="false">:00</button><button type="button" class="chip-mini" data-min="15" aria-pressed="false">:15</button>
+              <button type="button" class="chip-mini" data-min="30" aria-pressed="false">:30</button><button type="button" class="chip-mini" data-min="45" aria-pressed="false">:45</button>
+            </div>
+            <div class="chip-group" id="ampmChips">
+              <button type="button" class="chip-mini" data-ampm="AM" aria-pressed="false">AM</button><button type="button" class="chip-mini" data-ampm="PM" aria-pressed="false">PM</button>
+            </div>
+          </div>
+        </div>
+        <div class="sched-field sched-full">
+          <label>Or pick a quick slot</label>
+          <div class="sched-slots" id="schedSlots">
+            <button type="button" class="sched-slot" data-slot="Morning (9–12)" aria-pressed="false">Morning (9–12)</button>
+            <button type="button" class="sched-slot" data-slot="Afternoon (1–5)" aria-pressed="false">Afternoon (1–5)</button>
+            <button type="button" class="sched-slot" data-slot="Evening (6–9)" aria-pressed="false">Evening (6–9)</button>
+          </div>
+        </div>
+        <div class="sched-field sched-full">
+          <label for="schedNote">Anything I should know? (optional)</label>
+          <input type="text" id="schedNote" placeholder="e.g. what the role is, timezone, anything relevant" maxlength="500">
+        </div>
+      </div>
+
+      <button type="submit" class="sched-submit highlight-edge cta-shine" id="schedSubmit">
+        <span class="btn-text">Send for approval</span>
+        <span class="check">✓</span>
+      </button>
+
+      <div class="approval-road" id="approvalRoad" aria-hidden="true" aria-live="polite">
+        <span class="road-line"></span>
+        <span class="approval-runner" id="approvalRunner">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"></rect><path d="m4 7 8 6 8-6"></path></svg>
+        </span>
+        <span class="approval-inbox" id="approvalInbox">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16l1 11a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3L4 5Z"></path><path d="M3.5 14h5l1.5 2h4l1.5-2h5"></path></svg>
+        </span>
+        <span class="approval-status" id="approvalStatus">Sending securely</span>
+      </div>
+
+      <p class="sched-note">A real submission — it posts straight to my inbox, no email app needed.</p>
+      <p class="sched-error" id="schedError" role="alert" aria-live="polite" style="display:none;"></p>
+    </form>
+
+    <div class="link-row contact-link-row reveal">
+      <a class="link-chip highlight-edge cta-shine" href="https://github.com/yumna-09/" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="link-chip highlight-edge cta-shine" href="https://www.linkedin.com/in/yumna-kashif-3a69ba357/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="link-chip highlight-edge cta-shine" href="cv.pdf" target="_blank" rel="noopener">Resume / CV ↗</a>
+      <a class="link-chip highlight-edge cta-shine" href="mailto:yumna6431@gmail.com">Email directly ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-left">
+    <p>© 2026 Yumna Kashif. Built for the FlyRank ML Internship.</p>
+    <!-- FlyRank graduate badge — swap this href for your real verification-page link from the FlyRank portal -->
+    <a class="footer-badge" href="https://internship.flyrank.ai/verify/YOUR-ID" target="_blank" rel="noopener"><img src="images/logo.png" alt="FlyRank AI Fluency graduate badge" width="20" height="20">FlyRank Verified</a>
+    </div>
+    <ul class="navlinks">
+      <li><a class="edge-glow" href="index.html">Home</a></li>
+      <li><a class="edge-glow" href="work.html">Work</a></li>
+      <li><a class="edge-glow" href="about.html">About</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

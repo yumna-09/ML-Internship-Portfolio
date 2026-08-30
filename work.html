@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Yumna Kashif</title>
+
+<!-- Basic SEO & Social Share Preview Meta Tags -->
+<meta name="description" content="The FlyRank clustering case study — real notebook proof, an honest leakage check, and KMeans benchmarked against a rule-based baseline.">
+<meta property="og:title" content="Work — Yumna Kashif">
+<meta property="og:description" content="The FlyRank clustering case study, with real notebook proof at every step.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yumnakashif-ml-internship-portfolio.netlify.app/work">
+<meta property="og:image" content="https://yumnakashif-ml-internship-portfolio.netlify.app/images/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<script>
+  try {
+    if (localStorage.getItem('portfolio-theme') === 'dark') document.documentElement.dataset.theme = 'dark';
+  } catch (e) {}
+</script>
+
+<!-- Free, cookieless analytics -->
+<script data-goatcounter="https://yumnakashif.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body class="work-page">
+
+<div class="ambient-glow"><span></span><span></span><span></span></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header>
+  <nav>
+    <a class="brand" href="index.html"><img src="images/logo.png" alt="Y" class="brand-logo">Yumna Kashif</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <ul class="navlinks" id="navLinks">
+      <li><a class="edge-glow" href="index.html">Home</a></li>
+      <li><a class="active edge-glow" href="work.html">Work</a></li>
+      <li><a class="edge-glow" href="about.html">About</a></li>
+      <li><a class="edge-glow" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section style="padding-top:56px; padding-bottom:0;">
+  <div class="wrap">
+    <div class="case-hero-band reveal in tilt-card highlight-edge" style="margin-bottom:28px;">
+      <div class="case-hero-grid">
+        <div class="section-head" style="margin-bottom:0;">
+          <span class="eyebrow">Case Study — FlyRank ML Internship</span>
+          <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);">Structured Content Archetype Clustering</h1>
+          <p style="margin-top:16px; max-width:60ch;">FlyRank's search data has no clean label for "which content needs help" — pages don't come pre-sorted into categories. My lane groups content into natural performance archetypes using impressions, CTR, position, engagement, and age, without inventing a label that isn't there.</p>
+          <div class="quick-facts reveal-3d">
+            <div class="qf highlight-edge"><span class="qf-num" data-count="9.84" data-suffix="M">0</span><span class="qf-label">rows audited</span></div>
+            <div class="qf highlight-edge"><span class="qf-num" data-count="5" data-suffix="">0</span><span class="qf-label">features used</span></div>
+            <div class="qf highlight-edge"><span class="qf-num" data-count="7" data-suffix="">0</span><span class="qf-label">clusters found</span></div>
+            <div class="qf highlight-edge"><span class="qf-num" data-count="2.6" data-suffix="%">0</span><span class="qf-label">border-case errors</span></div>
+          </div>
+        </div>
+
+        <div class="case-hero-network">
+          <img src="images/case-illustration.png" alt="Structured content clustering workflow illustration">
+        </div>
+      </div>
+    </div>
+
+    <div class="methodology reveal highlight-edge">
+      <h3>Why clustering, not classification</h3>
+      <ul>
+        <li>There's no observed outcome label to predict — so it isn't classification.</li>
+        <li>There's no "which comes first" — so it isn't ranking.</li>
+        <li>Each page needs group membership, not a single score — so it isn't scoring either.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" style="margin-top: 24px; display: inline-block;">Result</span>
+      <h2>KMeans clearly beat the rule-based baseline</h2>
+      <p>Same scaled features, same metric (silhouette score), one clustering model against a rule-based system — not a multi-model bake-off, just an honest head-to-head against the thing it had to beat.</p>
+    </div>
+
+    <div class="stats reveal" style="grid-template-columns:repeat(2,1fr); border-top:none; padding-top:0; margin-top:0;">
+      <div class="stat tilt-card highlight-edge">
+        <div class="num" data-count="0.0013">0</div>
+        <div class="label">Baseline — rule-based action buckets (monitor / review_ctr / prioritize_ctr_review)</div>
+      </div>
+      <div class="stat tilt-card highlight-edge">
+        <div class="num" data-count="0.376">0</div>
+        <div class="label">KMeans clustering, k=7 — natural, well-separated groups</div>
+      </div>
+    </div>
+
+    <div class="chart-card reveal-3d tilt-card highlight-edge">
+      <h3>Silhouette score by k — the real search</h3>
+      <p style="opacity:0.75; font-size:0.9rem; margin-bottom:22px;">I tried k = 2 through 7 before picking the best one. Bars animate to their real value as you scroll to them.</p>
+      <div class="bar-chart">
+        <div class="bar-col"><div class="bar-fill" data-height="31.9"></div><span class="bar-val">0.319</span><span class="bar-k">k=2</span></div>
+        <div class="bar-col"><div class="bar-fill" data-height="33.2"></div><span class="bar-val">0.332</span><span class="bar-k">k=3</span></div>
+        <div class="bar-col"><div class="bar-fill" data-height="35.0"></div><span class="bar-val">0.350</span><span class="bar-k">k=4</span></div>
+        <div class="bar-col"><div class="bar-fill" data-height="35.9"></div><span class="bar-val">0.359</span><span class="bar-k">k=5</span></div>
+        <div class="bar-col"><div class="bar-fill" data-height="36.8"></div><span class="bar-val">0.368</span><span class="bar-k">k=6</span></div>
+        <div class="bar-col"><div class="bar-fill best" data-height="37.6"></div><span class="bar-val">0.376</span><span class="bar-k">k=7 ★</span></div>
+      </div>
+    </div>
+
+    <div class="methodology reveal highlight-edge" style="margin-top:36px;">
+      <h3>What the errors look like</h3>
+      <p style="opacity:0.85;">About 2.6% of pages were poorly matched to their cluster (negative silhouette) — almost all sitting on the border between a low-engagement and a very-high-engagement group. That's the honest limit of a hard-clustering method: some pages genuinely sit between two archetypes, and KMeans has to force a choice.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Proof, not claims</span>
+      <h2>The Real Notebook Work Behind this</h2>
+      <p>These are selected captures from the real internship notebooks behind the clustering workflow — not staged screenshots.</p>
+    </div>
+
+    <div class="notebook-showcase reveal-3d highlight-edge" data-notebook-carousel>
+      <div class="notebook-stage" aria-label="Selected notebook evidence">
+        <article class="notebook-slide highlight-edge" data-notebook-slide>
+          <div class="notebook-chrome"><span></span><span></span><span></span><em>Signal validation</em></div>
+          <div class="notebook-image"><img src="images/notebook-signal-validation.png" alt="Notebook evidence confirming CTR falls as search position worsens"></div>
+          <div class="notebook-caption"><strong>Signal validation</strong><span>Tested the CTR-versus-position assumption before using it.</span></div>
+        </article>
+        <article class="notebook-slide highlight-edge" data-notebook-slide>
+          <div class="notebook-chrome"><span></span><span></span><span></span><em>Model benchmark</em></div>
+          <div class="notebook-image"><img src="images/notebook-kmeans-baseline.png" alt="KMeans silhouette score compared with the rule-based baseline"></div>
+          <div class="notebook-caption"><strong>Model versus baseline</strong><span>Benchmarked KMeans and the rule-based system on the same metric.</span></div>
+        </article>
+        <article class="notebook-slide highlight-edge" data-notebook-slide>
+          <div class="notebook-chrome"><span></span><span></span><span></span><em>Leakage audit</em></div>
+          <div class="notebook-image"><img src="images/notebook-leakage-audit.png" alt="Train-only k selection and feature leakage audit"></div>
+          <div class="notebook-caption"><strong>Leakage audit</strong><span>Repeated model selection on train clients only and excluded identifiers.</span></div>
+        </article>
+        <article class="notebook-slide highlight-edge" data-notebook-slide>
+          <div class="notebook-chrome"><span></span><span></span><span></span><em>Honest validation</em></div>
+          <div class="notebook-image"><img src="images/notebook-honest-validation.png" alt="Held-out client validation and safe interpretation of results"></div>
+          <div class="notebook-caption"><strong>Held-out validation</strong><span>Reported observed separation without turning it into a causal claim.</span></div>
+        </article>
+        <article class="notebook-slide highlight-edge" data-notebook-slide>
+          <div class="notebook-chrome"><span></span><span></span><span></span><em>Human review</em></div>
+          <div class="notebook-image"><img src="images/notebook-human-review.png" alt="Human review protocols and mandatory sign-off queue"></div>
+          <div class="notebook-caption"><strong>Human-review safeguards</strong><span>Flagged uncertain and high-risk recommendations for mandatory sign-off.</span></div>
+        </article>
+        <article class="notebook-slide highlight-edge" data-notebook-slide>
+          <div class="notebook-chrome"><span></span><span></span><span></span><em>Leakage trap</em></div>
+          <div class="notebook-image"><img src="images/notebook-leakage-trap.png" alt="Leaky accuracy of one compared with honest accuracy of 0.596"></div>
+          <div class="notebook-caption"><strong>Leakage trap</strong><span>Demonstrated why a perfect-looking score can be the wrong result.</span></div>
+        </article>
+        <article class="notebook-slide highlight-edge" data-notebook-slide>
+          <div class="notebook-chrome"><span></span><span></span><span></span><em>Operational limits</em></div>
+          <div class="notebook-image"><img src="images/notebook-operational-limits.png" alt="Intended use, limitations, and action distribution from the notebook"></div>
+          <div class="notebook-caption"><strong>Operational limits</strong><span>Kept the output non-production and decision-support only.</span></div>
+        </article>
+      </div>
+      <div class="notebook-controls">
+        <button type="button" data-notebook-prev aria-label="Previous notebook screenshot">←</button>
+        <div class="notebook-dots" aria-label="Notebook screenshot position"></div>
+        <button type="button" data-notebook-next aria-label="Next notebook screenshot">→</button>
+      </div>
+    </div>
+
+    <div style="margin-top:40px; text-align:center;">
+      <a class="btn btn-primary btn-glow edge-glow work-outline-cta" href="https://github.com/yumna-09/FlyRank-ML-Internship/tree/main/work/notebooks" target="_blank" rel="noopener">Explore The Notebooks <span class="btn-arrow">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="capstone" class="capstone-work-section">
+  <div class="wrap">
+    <div class="case-hero-band capstone-hero-band reveal-3d tilt-card highlight-edge">
+      <div class="case-hero-grid">
+        <div class="section-head" style="margin-bottom:0;">
+          <span class="eyebrow">Capstone — Final Project</span>
+          <h2>From Content Signals to a Ranked Review Queue</h2>
+          <p style="margin-top:16px; max-width:60ch;">The capstone turns an anonymized sample of content pages into seven behavioral archetypes, then converts those groups into a practical, human-reviewed priority queue. Every recommendation stays traceable to observed signals.</p>
+          <div class="quick-facts reveal-3d">
+            <div class="qf highlight-edge"><span class="qf-num" data-count="30000" data-format="comma" data-suffix="">0</span><span class="qf-label">pages modeled</span></div>
+            <div class="qf highlight-edge"><span class="qf-num" data-count="7" data-suffix="">0</span><span class="qf-label">archetypes</span></div>
+            <div class="qf highlight-edge"><span class="qf-num" data-count="4" data-suffix="">0</span><span class="qf-label">review actions</span></div>
+            <div class="qf highlight-edge"><span class="qf-num" data-count="23.4" data-suffix="%">0</span><span class="qf-label">human sign-off</span></div>
+          </div>
+        </div>
+
+        <div class="case-hero-network capstone-hero-network">
+          <img src="images/capstone-network.png" alt="Capstone content archetype network illustration">
+          <span class="net-dot dark" style="left:48%; top:50%; width:14px; height:14px;"></span>
+          <span class="net-dot" style="left:39%; top:31%; width:10px; height:10px; animation-delay:.4s;"></span>
+          <span class="net-dot dark" style="left:53%; top:28%; width:8px; height:8px; animation-delay:.8s;"></span>
+          <span class="net-dot" style="left:72%; top:48%; width:10px; height:10px; animation-delay:1.2s;"></span>
+          <span class="net-dot" style="left:35%; top:64%; width:9px; height:9px; animation-delay:1.6s;"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="capstone-flow reveal-3d">
+      <div class="section-head">
+        <span class="eyebrow">From clusters to action</span>
+        <h2>From 30,000 Pages to a Ranked Action Queue</h2>
+        <p>An anonymized sample of 30,000 content pages is grouped by KMeans into seven behavioral archetypes, then converted into a human-reviewed queue with one clear next action per page.</p>
+      </div>
+
+      <div class="capstone-pipeline" aria-label="Capstone workflow">
+        <div class="pipeline-card highlight-edge"><strong>30,000</strong><span>content pages in</span></div>
+        <span class="pipeline-arrow" aria-hidden="true">→</span>
+        <div class="pipeline-card highlight-edge"><strong>7</strong><span>KMeans archetypes</span></div>
+        <span class="pipeline-arrow" aria-hidden="true">→</span>
+        <div class="pipeline-card highlight-edge"><strong>4</strong><span>review actions out</span></div>
+      </div>
+
+      <div class="action-pills" aria-label="Review actions">
+        <span class="action-chip">↻ Refresh</span>
+        <span class="action-chip">↗ Boost</span>
+        <span class="action-chip">✂ Prune</span>
+        <span class="action-chip">◉ Monitor</span>
+      </div>
+
+      <p class="validation-note">Validated honestly — the initial <strong>0.376</strong> silhouette became <strong>0.305</strong> under a client-held-out split, the more truthful measure of how the clusters hold up on unseen clients.</p>
+    </div>
+
+    <div class="section-head reveal capstone-evidence-head">
+      <span class="eyebrow">Capstone evidence</span>
+      <h2>The Notebook Behind the Final Project</h2>
+      <p>Selected, non-repeating captures show the model benchmark, cluster profiles, operating limits, and the final human-review queue.</p>
+    </div>
+
+    <div class="notebook-showcase reveal-3d highlight-edge" data-notebook-carousel>
+      <div class="notebook-stage" aria-label="Selected capstone notebook evidence">
+        <article class="notebook-slide highlight-edge" data-notebook-slide>
+          <div class="notebook-chrome"><span></span><span></span><span></span><em>Honest validation</em></div>
+          <div class="notebook-image"><img src="images/capstone-model-validation.png" alt="Capstone model benchmark and client-held-out validation results"></div>
+          <div class="notebook-caption"><strong>Model validation</strong><span>Compared the baseline, full-data estimate, and client-held-out result.</span></div>
+        </article>
+        <article class="notebook-slide highlight-edge" data-notebook-slide>
+          <div class="notebook-chrome"><span></span><span></span><span></span><em>Archetype profiles</em></div>
+          <div class="notebook-image"><img src="images/capstone-cluster-profiles.png" alt="Capstone cluster profiles and held-out decline rates"></div>
+          <div class="notebook-caption"><strong>Cluster profiles</strong><span>Mapped the behavioral signature and observed decline rate of each archetype.</span></div>
+        </article>
+        <article class="notebook-slide highlight-edge" data-notebook-slide>
+          <div class="notebook-chrome"><span></span><span></span><span></span><em>Scope and limits</em></div>
+          <div class="notebook-image"><img src="images/capstone-limitations.png" alt="Capstone supporting numbers and scope limitations"></div>
+          <div class="notebook-caption"><strong>Operating limits</strong><span>Made the sample size, held-out clients, and catalog coverage explicit.</span></div>
+        </article>
+        <article class="notebook-slide highlight-edge" data-notebook-slide>
+          <div class="notebook-chrome"><span></span><span></span><span></span><em>Human review queue</em></div>
+          <div class="notebook-image"><img src="images/capstone-action-queue.png" alt="Capstone ranked action queue and mandatory human sign-off rules"></div>
+          <div class="notebook-caption"><strong>Ranked action queue</strong><span>Translated model output into review actions with mandatory human sign-off.</span></div>
+        </article>
+      </div>
+      <div class="notebook-controls">
+        <button type="button" data-notebook-prev aria-label="Previous capstone screenshot">←</button>
+        <div class="notebook-dots" aria-label="Capstone screenshot position"></div>
+        <button type="button" data-notebook-next aria-label="Next capstone screenshot">→</button>
+      </div>
+    </div>
+
+    <div class="capstone-notebook-cta">
+      <a class="btn btn-primary btn-glow edge-glow work-outline-cta" href="https://github.com/yumna-09/FlyRank-ML-Internship/blob/main/work/notebooks/capstone.ipynb" target="_blank" rel="noopener">Explore The Capstone Notebook <span class="btn-arrow">↗</span></a>
+    </div>
+
+    <div class="important-links">
+      <div class="section-head reveal">
+        <span class="eyebrow">Go deeper</span>
+        <h2>Important Links</h2>
+        <p>Explore the published paper, source repository, notebook, full report, ranked action queue, and capstone demo.</p>
+      </div>
+
+      <div class="project-link-grid reveal-3d">
+        <a class="project-link-card highlight-edge" href="https://yumna-09.github.io/FlyRank-ML-Internship/" target="_blank" rel="noopener" aria-label="Open the live research paper">
+          <span class="project-link-visual visual-paper">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="16"></circle><path d="M8 24h32M24 8c5 5 7 10 7 16s-2 11-7 16c-5-5-7-10-7-16s2-11 7-16Z"></path></svg>
+            <small>Published Paper</small>
+          </span>
+          <span class="project-link-copy"><strong>Live Research Paper</strong><span>The complete visual write-up, published as a site.</span><em>Open Paper ↗</em></span>
+        </a>
+
+        <a class="project-link-card highlight-edge" href="https://github.com/yumna-09/FlyRank-ML-Internship" target="_blank" rel="noopener" aria-label="Open the GitHub repository">
+          <span class="project-link-visual visual-repo">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="15" cy="13" r="4"></circle><circle cx="33" cy="35" r="4"></circle><circle cx="33" cy="13" r="4"></circle><path d="M15 17v8c0 6 4 10 10 10h4M19 13h10"></path></svg>
+            <small>GitHub Repository</small>
+          </span>
+          <span class="project-link-copy"><strong>GitHub Repository</strong><span>Source, notebooks, documentation, and reproducible work.</span><em>View Source ↗</em></span>
+        </a>
+
+        <a class="project-link-card highlight-edge" href="https://github.com/yumna-09/FlyRank-ML-Internship/blob/main/work/notebooks/capstone.ipynb" target="_blank" rel="noopener" aria-label="Open the capstone notebook">
+          <span class="project-link-visual visual-notebook">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="12" y="8" width="25" height="32" rx="3"></rect><path d="M18 8v32M22 17h10M22 23h10M22 29h7"></path></svg>
+            <small>Core Notebook</small>
+          </span>
+          <span class="project-link-copy"><strong>Capstone Notebook</strong><span>The complete clustering-to-action pipeline and evidence.</span><em>Open Notebook ↗</em></span>
+        </a>
+
+        <a class="project-link-card highlight-edge" href="https://github.com/yumna-09/FlyRank-ML-Internship/blob/main/work/CAPSTONE_REPORT.md" target="_blank" rel="noopener" aria-label="Read the full capstone report">
+          <span class="project-link-visual visual-report">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 7h14l7 7v27H14Z"></path><path d="M28 7v8h7M19 23h11M19 29h11M19 35h8"></path></svg>
+            <small>Technical Report</small>
+          </span>
+          <span class="project-link-copy"><strong>Full Capstone Report</strong><span>Methods, results, validation, limitations, and conclusions.</span><em>Read Report ↗</em></span>
+        </a>
+
+        <a class="project-link-card highlight-edge" href="https://github.com/yumna-09/FlyRank-ML-Internship/releases/download/v1.0/ranked_action_queue.csv" target="_blank" rel="noopener" aria-label="Download the ranked action queue">
+          <span class="project-link-visual visual-queue">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8v23M16 23l8 8 8-8M11 39h26"></path></svg>
+            <small>Review Queue</small>
+          </span>
+          <span class="project-link-copy"><strong>Ranked Action Queue</strong><span>Download the prioritized human-review list.</span><em>Download Queue ↓</em></span>
+        </a>
+
+        <a class="project-link-card highlight-edge" href="https://youtu.be/zC9mphblVJk" target="_blank" rel="noopener" aria-label="Watch the capstone demo">
+          <span class="project-link-visual visual-demo">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="10" width="34" height="28" rx="7"></rect><path class="play-shape" d="m21 18 10 6-10 6Z"></path></svg>
+            <small>Capstone Demo</small>
+          </span>
+          <span class="project-link-copy"><strong>Watch Capstone Demo</strong><span>A concise walkthrough of the final project and findings.</span><em>Watch Demo ↗</em></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-left">
+    <p>© 2026 Yumna Kashif. Built for the FlyRank ML Internship.</p>
+    <!-- FlyRank graduate badge — swap this href for your real verification-page link from the FlyRank portal -->
+    <a class="footer-badge" href="https://internship.flyrank.ai/verify/YOUR-ID" target="_blank" rel="noopener"><img src="images/logo.png" alt="FlyRank AI Fluency graduate badge" width="20" height="20">FlyRank Verified</a>
+    </div>
+    <ul class="navlinks">
+      <li><a class="edge-glow" href="index.html">Home</a></li>
+      <li><a class="edge-glow" href="about.html">About</a></li>
+      <li><a class="edge-glow" href="contact.html">Contact</a></li>
+      <li><a class="edge-glow" href="https://www.linkedin.com/in/yumna-kashif-3a69ba357/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
