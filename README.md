@@ -15,7 +15,7 @@
 | --------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | **Live Portfolio**                | [yumnakashif-ml-internship-portfolio.netlify.app](https://yumnakashif-ml-internship-portfolio.netlify.app/) |
 | **FlyRank Internship Repository** | [github.com/yumna-09/FlyRank-ML-Internship](https://github.com/yumna-09/FlyRank-ML-Internship)              |
-| **Deployed Research Paper**       | [Content Archetype Clustering](https://yumna-09.github.io/FlyRank-ML-Internship/)                           |
+| **Deployed Research Paper**       | [Structured Content Archetype Clustering](https://yumna-09.github.io/FlyRank-ML-Internship/)                           |
 | **LinkedIn Profile**              |  [LinkedIn](https://www.linkedin.com/in/yumna-kashif-3a69ba357/)                                                                                         |
 
 ---
