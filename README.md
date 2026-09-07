@@ -1,13 +1,14 @@
 # ML Internship Portfolio — Yumna Kashif
 
-- **Author:** Yumna Kashif
-- **Internship:** Machine Learning Engineering Internship — FlyRank AI
-- **ML Lane:** Structured Content Archetype Clustering
-- **Project Type:** Interactive ML Portfolio
-- **Built With:** HTML, CSS, JavaScript, Formspree, Netlify
-- **Status:** Deployed
+* **Author:** Yumna Kashif
+* **Internship:** Machine Learning Engineering Internship — FlyRank AI
+* **Additional Track:** AI Fluency
+* **ML Lane:** Structured Content Archetype Clustering
+* **Project Type:** Interactive ML Portfolio
+* **Built With:** HTML, CSS, JavaScript, Formspree, Netlify
+* **Status:** Completed and Deployed
 
-> An interactive, evidence-first portfolio documenting my first Machine Learning Engineering internship through real notebooks, honest validation, and a structured content clustering capstone.
+> An interactive, evidence-first portfolio documenting my first Machine Learning Engineering internship through real notebooks, honest validation, a structured content clustering capstone, and officially verified credentials.
 
 ## 🔗 Project Links
 
@@ -15,18 +16,28 @@
 | --------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | **Live Portfolio**                | [yumnakashif-ml-internship-portfolio.netlify.app](https://yumnakashif-ml-internship-portfolio.netlify.app/) |
 | **FlyRank Internship Repository** | [github.com/yumna-09/FlyRank-ML-Internship](https://github.com/yumna-09/FlyRank-ML-Internship)              |
-| **Deployed Research Paper**       | [Structured Content Archetype Clustering](https://yumna-09.github.io/FlyRank-ML-Internship/)                           |
-| **LinkedIn Profile**              |  [LinkedIn](https://www.linkedin.com/in/yumna-kashif-3a69ba357/)                                                                                         |
+| **Deployed Research Paper**       | [Structured Content Archetype Clustering](https://yumna-09.github.io/FlyRank-ML-Internship/)                |
+| **LinkedIn Profile**              | [Yumna Kashif](https://www.linkedin.com/in/yumna-kashif-3a69ba357/)                                         |
+
+---
+
+## ✅ Verified Credentials
+
+| Credential                                  | Credential ID        | Document                                                                   | Official Verification                                                                          |
+| ------------------------------------------- | -------------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **Machine Learning Engineering Internship** | `FR-D11-88DEB-01018` | [View Certificate](credentials/yumna-kashif-ml-internship-certificate.pdf) | [FlyRank Verified ↗](https://internship.flyrank.ai/verify/FR-D11-88DEB-01018?first_name=Yumna) |
+| **AI Fluency**                              | `FR-D11-E4F05-E3C90` | [View Certificate](credentials/yumna-kashif-ai-fluency-certificate.pdf)    | [FlyRank Verified ↗](https://internship.flyrank.ai/verify/FR-D11-E4F05-E3C90?first_name=Yumna) |
+| **Letter of Recommendation**                | `FR-D10-56076-8A981` | [View Letter](credentials/yumna-kashif-recommendation-letter.pdf)          | [FlyRank Verified ↗](https://internship.flyrank.ai/verify/FR-D10-56076-8A981?first_name=Yumna) |
 
 ---
 
 ## Overview
 
-This portfolio documents the work completed during my first Machine Learning Engineering internship at FlyRank AI.
+This portfolio documents the work completed during my first Machine Learning Engineering internship at FlyRank AI, alongside my AI Fluency learning track.
 
-Rather than presenting the internship as a collection of claims, the portfolio connects each major result to real notebook evidence, model outputs, validation decisions, and limitations.
+Rather than presenting the internship as a collection of claims, the portfolio connects each major result to real notebook evidence, model outputs, validation decisions, limitations, and officially verifiable credentials.
 
-The central project explores how content pages can be grouped into natural performance archetypes using observed search and engagement signals—without inventing a clean label for “which page needs help.”
+The central ML project explores how content pages can be grouped into natural performance archetypes using observed search and engagement signals—without inventing a clean label for “which page needs help.”
 
 The resulting model supports a human-reviewed action queue with four possible recommendations:
 
@@ -41,12 +52,12 @@ The system is presented as **decision-support**, not automatic content action.
 
 ## Portfolio Pages
 
-| Page           | Purpose                                                               |
-| -------------- | --------------------------------------------------------------------- |
-| `index.html`   | Interactive homepage and project overview                             |
-| `work.html`    | Internship case study, notebook evidence, model results, and capstone |
-| `about.html`   | Skills, background, professional timeline, and profile links          |
-| `contact.html` | Interview-call scheduling form and contact options                    |
+| Page           | Purpose                                                                                     |
+| -------------- | ------------------------------------------------------------------------------------------- |
+| `index.html`   | Interactive homepage and project overview                                                   |
+| `work.html`    | Internship case study, notebook evidence, model results, capstone, and verified credentials |
+| `about.html`   | Skills, background, professional timeline, and profile links                                |
+| `contact.html` | Interview-call scheduling form and contact options                                          |
 
 ---
 
@@ -105,6 +116,7 @@ The lower held-out score is treated as the more truthful estimate because it mea
 * Human-review workflow design
 * Research communication
 * Evidence-based model reporting
+* AI-assisted development workflows
 * Responsive frontend development
 * Light and dark theme implementation
 * Accessible motion and interaction states
@@ -119,17 +131,19 @@ Key interface features include:
 
 * Glass-inspired responsive surfaces
 * Cursor-following 3D card depth
-* Animated notebook evidence showcase
+* Animated notebook evidence showcases
 * Interactive clustering pipeline
 * Horizontal professional timeline
 * Optional instant timeline view
 * Theme-aware contact globe
+* Verified credential cards
+* Smooth revolving edge highlights
 * Staggered CTA shine effects
 * Reduced-motion support
 * Mobile-specific layouts
 * Persistent light and dark theme preference
 
-The animation supports the project narrative without replacing the underlying content.
+The animations support the project narrative without replacing the underlying content.
 
 ---
 
@@ -160,6 +174,10 @@ ML-Internship-Portfolio/
 ├── style.css
 ├── script.js
 ├── cv.pdf
+├── credentials/
+│   ├── yumna-kashif-ml-internship-certificate.pdf
+│   ├── yumna-kashif-ai-fluency-certificate.pdf
+│   └── yumna-kashif-recommendation-letter.pdf
 └── images/
     ├── notebook evidence
     ├── capstone figures
@@ -194,7 +212,7 @@ http://localhost:8000
 
 This portfolio uses anonymized and public-safe internship evidence.
 
-It does not include raw production data, client names, private credentials, or confidential identifiers.
+It does not include raw production data, client names, access credentials, or confidential identifiers. The credential IDs displayed in the portfolio are public verification identifiers issued by FlyRank AI.
 
 The clustering results describe patterns within the evaluated data. They do not prove causal relationships, guarantee content outcomes, or replace human review.
 
@@ -214,7 +232,7 @@ AI was used as an implementation and iteration partner for coding, debugging, re
 
 ## Acknowledgements
 
-This portfolio was created as part of my Machine Learning Engineering or AI Fluency internship at [FlyRank AI](https://flyrank.ai/).
+This portfolio was created to document my Machine Learning Engineering internship and AI Fluency track at [FlyRank AI](https://flyrank.ai/).
 
 Thank you to **Alen Malkoč**, **Mirza Ašćerić**, **Haris Hodzic**, **Léo Yigit Ekiz**, and **Eldin Pintol** for their guidance and support throughout the internship.
 
